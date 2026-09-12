@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Life Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <button id="themeToggleBtn" class="theme-toggle" title="Ganti tema">🌙</button>
+
+  <div class="dashboard">
+
+    <!-- GREETING CARD -->
+    <div class="card greeting-card">
+      <div id="clock" class="clock">--:--:--</div>
+      <div id="dateText" class="date-text">-</div>
+      <div class="greeting-row">
+        <h1 id="greetingText">Halo</h1>
+        <button id="editNameBtn" class="small-btn">✏️ Ubah Nama</button>
+      </div>
+    </div>
+
+    <div class="grid">
+
+      <!-- FOCUS TIMER -->
+      <div class="card">
+        <h3>Focus Timer</h3>
+        <div id="timerDisplay" class="timer-display">25:00</div>
+        <div class="timer-controls">
+          <button id="startBtn">Start</button>
+          <button id="stopBtn">Stop</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+      </div>
+
+      <!-- TO-DO LIST -->
+      <div class="card tasks-card">
+        <h3>Tasks</h3>
+        <div class="input-row">
+          <input type="text" id="taskInput" placeholder="Tambah tugas baru...">
+          <button id="addTaskBtn">Add</button>
+        </div>
+        <p id="taskWarning" class="warning-text"></p>
+        <ul id="taskList" class="task-list"></ul>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="card">
+        <h3>Quick Links</h3>
+        <div class="input-row">
+          <input type="text" id="linkName" placeholder="Nama link">
+          <input type="text" id="linkUrl" placeholder="URL (mis: google.com)">
+          <button id="addLinkBtn">Add Link</button>
+        </div>
+        <div id="linkButtons" class="link-buttons"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
